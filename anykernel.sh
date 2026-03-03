@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=ExampleKernel by osm0sis @ xda-developers
+kernel.string=BunnyX-PERF Kernel by JOD BUNNY
 do.devicecheck=1
 do.modules=0
 do.systemless=1

@@ -7,15 +7,15 @@ properties() { '
 kernel.string=BunnyX-PERF Kernel by JOD BUNNY
 do.devicecheck=1
 do.modules=0
-do.systemless=1
+do.systemless=0
 do.cleanup=1
-do.cleanuponabort=0
+do.cleanuponabort=1
 device.name1=RMX2061
 device.name2=RMX2063
-device.name3=RMX2061L1
+device.name3=RMX2170
 device.name4=atoll
 device.name5=
-supported.versions=
+supported.versions=13.0-16.0
 supported.patchlevels=
 supported.vendorpatchlevels=
 '; } # end properties

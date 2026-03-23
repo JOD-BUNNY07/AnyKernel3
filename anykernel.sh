@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=BunnyX-PERF Kernel by JOD BUNNY
+kernel.string=
 do.devicecheck=1
 do.modules=0
 do.systemless=0
@@ -15,11 +15,10 @@ device.name2=RMX2063
 device.name3=RMX2170
 device.name4=atoll
 device.name5=
-supported.versions=13.0-16.0
+supported.versions=
 supported.patchlevels=
 supported.vendorpatchlevels=
 '; } # end properties
-
 
 ### AnyKernel install
 ## boot files attributes
@@ -48,32 +47,16 @@ ui_print "██╔══██╗██║   ██║██║╚██╗█�
 ui_print "██████╔╝╚██████╔╝██║ ╚████║██║ ╚████║   ██║   "
 ui_print "╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝   ╚═╝   "
 ui_print " "
-ui_print "        BUNNY X PERF"
+ui_print "        BUNNY X Ultra"
 ui_print "--------------------------------"
 ui_print " Developer : JOD BUNNY"
 ui_print " Device    : RMX2061 (atoll)"
-ui_print " Variant   : PERF-KSU-NXT"
+ui_print " Variant   : ULTRA-KSU-NXT"
 ui_print "--------------------------------"
 ui_print " "
-# init.rc
-backup_file init.rc;
-replace_string init.rc "cpuctl cpu,timer_slack" "mount cgroup none /dev/cpuctl cpu" "mount cgroup none /dev/cpuctl cpu,timer_slack";
-
-# init.tuna.rc
-backup_file init.tuna.rc;
-insert_line init.tuna.rc "nodiratime barrier=0" after "mount_all /fstab.tuna" "\tmount ext4 /dev/block/platform/omap/omap_hsmmc.0/by-name/userdata /data remount nosuid nodev noatime nodiratime barrier=0";
-append_file init.tuna.rc "bootscript" init.tuna;
-
-# fstab.tuna
-backup_file fstab.tuna;
-patch_fstab fstab.tuna /system ext4 options "noatime,barrier=1" "noatime,nodiratime,barrier=0";
-patch_fstab fstab.tuna /cache ext4 options "barrier=1" "barrier=0,nomblk_io_submit";
-patch_fstab fstab.tuna /data ext4 options "data=ordered" "nomblk_io_submit,data=writeback";
-append_file fstab.tuna "usbdisk" fstab;
 
 write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_boot ramdisk
 ## end boot install
-
 
 ## init_boot files attributes
 #init_boot_attributes() {

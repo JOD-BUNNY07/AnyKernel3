@@ -39,21 +39,12 @@ PATCH_VBMETA_FLAG=auto;
 # boot install
 dump_boot; # use split_boot to skip ramdisk unpack, e.g. for devices with init_boot ramdisk
 
-ui_print " "
-ui_print "██████╗ ██╗   ██╗███╗   ██╗███╗   ██╗██╗   ██╗"
-ui_print "██╔══██╗██║   ██║████╗  ██║████╗  ██║╚██╗ ██╔╝"
-ui_print "██████╔╝██║   ██║██╔██╗ ██║██╔██╗ ██║ ╚████╔╝ "
-ui_print "██╔══██╗██║   ██║██║╚██╗██║██║╚██╗██║  ╚██╔╝  "
-ui_print "██████╔╝╚██████╔╝██║ ╚████║██║ ╚████║   ██║   "
-ui_print "╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝   ╚═╝   "
-ui_print " "
-ui_print "        BUNNY X Ultra"
-ui_print "--------------------------------"
-ui_print " Developer : JOD BUNNY"
-ui_print " Device    : RMX2061 (atoll)"
-ui_print " Variant   : ULTRA-KSU-NXT"
-ui_print "--------------------------------"
-ui_print " "
+ui_print "N O V A   Z E N I T H"
+ui_print "----------------------"
+ui_print "Developer : JOD BUNNY"
+ui_print "Device    : RMX2061"
+ui_print "Variant   : PERF-KSU-NXT"
+ui_print "----------------------"
 
 write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_boot ramdisk
 ## end boot install

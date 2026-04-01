@@ -60,6 +60,8 @@ ui_print " 🔋 Battery Friendly"
 ui_print "--------------------------------"
 ui_print " "
 
+
+
 write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_boot ramdisk
 ## end boot install
 

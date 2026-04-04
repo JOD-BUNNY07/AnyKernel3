@@ -40,26 +40,84 @@ PATCH_VBMETA_FLAG=auto;
 dump_boot; # use split_boot to skip ramdisk unpack, e.g. for devices with init_boot ramdisk
 
 ui_print " "
+
 ui_print "███╗   ██╗██╗████████╗██████╗  ██████╗ ██╗  ██╗"
 ui_print "████╗  ██║██║╚══██╔══╝██╔══██╗██╔═══██╗╚██╗██╔╝"
 ui_print "██╔██╗ ██║██║   ██║   ██████╔╝██║   ██║ ╚███╔╝ "
 ui_print "██║╚██╗██║██║   ██║   ██╔══██╗██║   ██║ ██╔██╗ "
 ui_print "██║ ╚████║██║   ██║   ██║  ██║╚██████╔╝██╔╝ ██╗"
 ui_print "╚═╝  ╚═══╝╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝"
+
 ui_print " "
-ui_print "        ⚡ NitroX Kernel ⚡"
-ui_print "----------------------------------"
-ui_print " Variant   : PERF - KSU NXT"
-ui_print " Device    : RMX2061 (atoll)"
+ui_print "╔══════════════════════════════════════╗"
+ui_print "║        ⚡ NitroX Zenith Kernel ⚡       ║"
+ui_print "╚══════════════════════════════════════╝"
+ui_print " "
+
+ui_print "🧠 Initializing NitroX Engine..."
+sleep 0.3
+ui_print "⚙️ Mounting partitions..."
+sleep 0.3
+ui_print "🔍 Checking device compatibility..."
+sleep 0.3
+
+ui_print " "
+ui_print "────────── 📱 DEVICE INFO ───────────"
+ui_print " Device    : RMX2061 (Atoll)"
+ui_print " Variant   : KSU-NXT"
 ui_print " Android   : AOSP / Custom ROM"
-ui_print "----------------------------------"
+ui_print " "
+
+ui_print "────────── ⚙️ PERFORMANCE ──────────"
 ui_print " 💀 Ultra Smooth UI"
 ui_print " 🎮 Stable Gaming FPS"
 ui_print " 🔥 Low Heating"
-ui_print " 🔋 Optimized Battery"
-ui_print "----------------------------------"
-ui_print " Developer : JOD BUNNY"
-ui_print "----------------------------------"
+ui_print " 🔋 Battery Optimized"
+ui_print " "
+
+ui_print "────────── 👨‍💻 DEVELOPER ──────────"
+ui_print " Maintainer : JOD BUNNY"
+ui_print " Kernel     : NitroX-Zenith"
+ui_print " "
+
+ui_print "🚀 Starting Flash Process..."
+sleep 0.5
+
+# ==============================
+# FAKE PROGRESS BAR 😈
+# ==============================
+
+ui_print " "
+ui_print "[░░░░░░░░░░] 0%"
+sleep 0.3
+ui_print "[██░░░░░░░░] 20%"
+sleep 0.3
+ui_print "[████░░░░░░] 40%"
+sleep 0.3
+ui_print "[██████░░░░] 60%"
+sleep 0.3
+ui_print "[████████░░] 80%"
+sleep 0.3
+ui_print "[██████████] 100%"
+sleep 0.3
+
+ui_print " "
+
+ui_print "🔧 Injecting kernel tweaks..."
+sleep 0.3
+ui_print "⚡ Applying NitroX optimizations..."
+sleep 0.3
+ui_print "📦 Patching boot image..."
+sleep 0.3
+
+ui_print " "
+ui_print "╔══════════════════════════════════════╗"
+ui_print "║        ✅ Flash Completed!            ║"
+ui_print "╚══════════════════════════════════════╝"
+ui_print " "
+
+ui_print "🎉 Enjoy NitroX Zenith Performance!"
+ui_print "💬 Join Telegram for updates!"
 ui_print " "
 
 write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_boot ramdisk

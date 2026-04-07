@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=
+kernel.string=Rengoko Kernel by Jod Bunny
 do.devicecheck=1
 do.modules=0
 do.systemless=0
@@ -38,13 +38,6 @@ PATCH_VBMETA_FLAG=auto;
 
 # boot install
 dump_boot; # use split_boot to skip ramdisk unpack, e.g. for devices with init_boot ramdisk
-
-ui_print "N O V A   Z E N I T H"
-ui_print "----------------------"
-ui_print "Developer : JOD BUNNY"
-ui_print "Device    : RMX2061"
-ui_print "Variant   : PERF-KSU-NXT"
-ui_print "----------------------"
 
 write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_boot ramdisk
 ## end boot install

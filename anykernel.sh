@@ -51,7 +51,7 @@ ui_print "        BUNNY X Ultra"
 ui_print "--------------------------------"
 ui_print " Developer : JOD BUNNY"
 ui_print " Device    : RMX2061 (atoll)"
-ui_print " Variant   : Non - Ksu"
+ui_print " Variant   : KSU - NXT"
 ui_print "--------------------------------"
 ui_print " "
 

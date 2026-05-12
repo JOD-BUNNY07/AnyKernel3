@@ -64,7 +64,6 @@ ui_print "--------------------------------"
 ui_print " Dev     : JOD BUNNY 07"
 ui_print " Device  : RMX2061 / RMX2071"
 ui_print " SoC     : Qualcomm SM7125"
-ui_print " Variant : KSU-NXT (33258)"
 ui_print "--------------------------------"
 ui_print " "
 

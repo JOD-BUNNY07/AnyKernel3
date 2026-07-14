@@ -1,5 +1,6 @@
 ### AnyKernel3 Ramdisk Mod Script
-## osm0sis @ xda-developers
+## Modified by Jod Bunny (Realme 6 Pro & 7 Pro Support)
+## Based on osm0sis @ xda-developers
 
 ### AnyKernel setup
 # global properties
@@ -7,31 +8,42 @@ properties() { '
 kernel.string=
 do.devicecheck=1
 do.modules=0
-do.systemless=0
+do.systemless=1
 do.cleanup=1
-do.cleanuponabort=1
+do.cleanuponabort=0
+
+# Supported devices
 device.name1=RMX2061
-device.name2=RMX2063
-device.name3=RMX2170
-device.name4=atoll
-device.name5=
-supported.versions=
+device.name2=RMX2170
+device.name3=atoll
+device.name4=reatoll
+device.name5=realme6pro
+device.name6=realme7pro
+device.name7=rmx2061
+device.name8=rmx2170
+
+# Supported Android versions
+supported.versions=13-17
 supported.patchlevels=
 supported.vendorpatchlevels=
 '; } # end properties
 
+
 ### AnyKernel install
 ## boot files attributes
 boot_attributes() {
-set_perm_recursive 0 0 755 644 $RAMDISK/*;
-set_perm_recursive 0 0 750 750 $RAMDISK/init* $RAMDISK/sbin;
+  set_perm_recursive 0 0 755 644 $RAMDISK/*;
+  set_perm_recursive 0 0 750 750 $RAMDISK/init* $RAMDISK/sbin;
 } # end attributes
 
+
 # boot shell variables
+# Realme 6 Pro (RMX2061, atoll) & Realme 7 Pro (RMX2170, reatoll)
 BLOCK=/dev/block/bootdevice/by-name/boot;
-IS_SLOT_DEVICE=0;
+IS_SLOT_DEVICE=0;   # Both are A-only devices
 RAMDISK_COMPRESSION=auto;
 PATCH_VBMETA_FLAG=auto;
+
 
 # import functions/variables and setup patching - see for reference (DO NOT REMOVE)
 . tools/ak3-core.sh;
@@ -40,23 +52,67 @@ PATCH_VBMETA_FLAG=auto;
 dump_boot; # use split_boot to skip ramdisk unpack, e.g. for devices with init_boot ramdisk
 
 ui_print " "
-ui_print "██████╗ ██╗   ██╗███╗   ██╗███╗   ██╗██╗   ██╗"
-ui_print "██╔══██╗██║   ██║████╗  ██║████╗  ██║╚██╗ ██╔╝"
-ui_print "██████╔╝██║   ██║██╔██╗ ██║██╔██╗ ██║ ╚████╔╝ "
-ui_print "██╔══██╗██║   ██║██║╚██╗██║██║╚██╗██║  ╚██╔╝  "
-ui_print "██████╔╝╚██████╔╝██║ ╚████║██║ ╚████║   ██║   "
-ui_print "╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝   ╚═╝   "
+ui_print "        ██████╗ ██╗   ██╗███╗   ██╗███╗   ██╗██╗   ██╗"
+ui_print "        ██╔══██╗██║   ██║████╗  ██║████╗  ██║╚██╗ ██╔╝"
+ui_print "        ██████╔╝██║   ██║██╔██╗ ██║██╔██╗ ██║ ╚████╔╝ "
+ui_print "        ██╔══██╗██║   ██║██║╚██╗██║██║╚██╗██║  ╚██╔╝  "
+ui_print "        ██████╔╝╚██████╔╝██║ ╚████║██║ ╚████║   ██║   "
+ui_print "        ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝   ╚═╝   "
+ui_print "
+ui_print "                                                          
+ui_print "           ██████╗ ██╗      █████╗ ██████╗ ███████╗      
+ui_print "           ██╔══██╗██║     ██╔══██╗██╔══██╗██╔════╝      
+ui_print "           ██████╔╝██║     ███████║██║  ██║█████╗        
+ui_print "           ██╔══██╗██║     ██╔══██║██║  ██║██╔══╝        
+ui_print "           ██████╔╝███████╗██║  ██║██████╔╝███████╗      
+ui_print "           ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝      
+ui_print "                                                           
+ui_print "                             ██╗  ██╗                              
+ui_print "                             ╚██╗██╔╝                              
+ui_print "                              ╚███╔╝                               
+ui_print "                              ██╔██╗                              
+ui_print "                             ██╔╝ ██╗                              
+ui_print "                             ╚═╝  ╚═╝                             
+ui_print "                                                          
 ui_print " "
-ui_print "         ​B U N N Y   X  "
-ui_print "--------------------------------"
-ui_print " Developer : JOD BUNNY"
-ui_print " Device    : RMX2061 (atoll)"
-ui_print " Variant   : NON - KSU"
-ui_print "--------------------------------"
+ui_print "====================[ B U N N Y  B L A D E  X ]========================="
 ui_print " "
+ui_print "  Developer : JOD BUNNY 07"
+ui_print "  Device    : Realme 6 Pro (RMX2061 / RMX2063)"
+ui_print "  Platform  : Qualcomm Snapdragon 720G (SM7125)"
+ui_print "  Build     : Stable Release"
+ui_print "  Status    : Ready to Flash"
+ui_print " "
+ui_print "--------------------------------------------------------------"
+ui_print "      • Performance Tuned"
+ui_print "      • Battery Optimized"
+ui_print "      • Smooth Experience"
+ui_print "      • Upstreamed & Stable"
+ui_print "--------------------------------------------------------------"
+ui_print " "
+ui_print "           Thank you for choosing Bunny X Kernel!"
+ui_print "=============================================================="
+ui_print " "
+
+# init.rc
+backup_file init.rc;
+replace_string init.rc "cpuctl cpu,timer_slack" "mount cgroup none /dev/cpuctl cpu" "mount cgroup none /dev/cpuctl cpu,timer_slack";
+
+# init.tuna.rc
+backup_file init.tuna.rc;
+insert_line init.tuna.rc "nodiratime barrier=0" after "mount_all /fstab.tuna" "\tmount ext4 /dev/block/platform/omap/omap_hsmmc.0/by-name/userdata /data remount nosuid nodev noatime nodiratime barrier=0";
+append_file init.tuna.rc "bootscript" init.tuna;
+
+# fstab.tuna
+backup_file fstab.tuna;
+patch_fstab fstab.tuna /system ext4 options "noatime,barrier=1" "noatime,nodiratime,barrier=0";
+patch_fstab fstab.tuna /cache ext4 options "barrier=1" "barrier=0,nomblk_io_submit";
+patch_fstab fstab.tuna /data ext4 options "data=ordered" "nomblk_io_submit,data=writeback";
+append_file fstab.tuna "usbdisk" fstab;
 
 write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_boot ramdisk
 ## end boot install
+
 
 ## init_boot files attributes
 #init_boot_attributes() {
@@ -116,4 +172,3 @@ write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_
 
 #write_boot; # use flash_boot to skip ramdisk repack, e.g. for dtb on devices with hdr v4 but no vendor_kernel_boot
 ## end vendor_boot install
-

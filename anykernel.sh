@@ -23,7 +23,7 @@ device.name7=rmx2061
 device.name8=rmx2170
 
 # Supported Android versions
-supported.versions=13-17
+supported.versions=12-16
 supported.patchlevels=
 supported.vendorpatchlevels=
 '; } # end properties
@@ -52,47 +52,33 @@ PATCH_VBMETA_FLAG=auto;
 dump_boot; # use split_boot to skip ramdisk unpack, e.g. for devices with init_boot ramdisk
 
 ui_print " "
-ui_print "        ██████╗ ██╗   ██╗███╗   ██╗███╗   ██╗██╗   ██╗"
-ui_print "        ██╔══██╗██║   ██║████╗  ██║████╗  ██║╚██╗ ██╔╝"
-ui_print "        ██████╔╝██║   ██║██╔██╗ ██║██╔██╗ ██║ ╚████╔╝ "
-ui_print "        ██╔══██╗██║   ██║██║╚██╗██║██║╚██╗██║  ╚██╔╝  "
-ui_print "        ██████╔╝╚██████╔╝██║ ╚████║██║ ╚████║   ██║   "
-ui_print "        ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝   ╚═╝   "
-ui_print "
-ui_print "                                                          
-ui_print "           ██████╗ ██╗      █████╗ ██████╗ ███████╗      
-ui_print "           ██╔══██╗██║     ██╔══██╗██╔══██╗██╔════╝      
-ui_print "           ██████╔╝██║     ███████║██║  ██║█████╗        
-ui_print "           ██╔══██╗██║     ██╔══██║██║  ██║██╔══╝        
-ui_print "           ██████╔╝███████╗██║  ██║██████╔╝███████╗      
-ui_print "           ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝      
-ui_print "                                                           
-ui_print "                             ██╗  ██╗                              
-ui_print "                             ╚██╗██╔╝                              
-ui_print "                              ╚███╔╝                               
-ui_print "                              ██╔██╗                              
-ui_print "                             ██╔╝ ██╗                              
-ui_print "                             ╚═╝  ╚═╝                             
-ui_print "                                                          
+ui_print "██████╗ ██╗   ██╗███╗   ██╗███╗   ██╗██╗   ██╗"
+ui_print "██╔══██╗██║   ██║████╗  ██║████╗  ██║╚██╗ ██╔╝"
+ui_print "██████╔╝██║   ██║██╔██╗ ██║██╔██╗ ██║ ╚████╔╝ "
+ui_print "██╔══██╗██║   ██║██║╚██╗██║██║╚██╗██║  ╚██╔╝  "
+ui_print "██████╔╝╚██████╔╝██║ ╚████║██║ ╚████║   ██║   "
+ui_print "╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝   ╚═╝   "
 ui_print " "
-ui_print "====================[ B U N N Y  B L A D E  X ]========================="
+ui_print "        🐰 BUNNY BLADE X KERNEL"
+ui_print "════════════════════════════════════════"
+ui_print " Developer : JOD BUNNY 07"
+ui_print " Device    : RMX2061 / RMX2071"
+ui_print " Platform  : Qualcomm SM7125"
+ui_print "════════════════════════════════════════"
 ui_print " "
-ui_print "  Developer : JOD BUNNY 07"
-ui_print "  Device    : Realme 6 Pro (RMX2061 / RMX2063)"
-ui_print "  Device    : Realme 7 Pro (RMX2071 / Reatoll)"
-ui_print "  Platform  : Qualcomm Snapdragon 720G (SM7125)"
-ui_print "  Build     : Stable Release"
-ui_print "  Status    : Ready to Flash"
+ui_print "     Stable • Smooth • Powerful"
+ui_print "    Gaming • Battery • Optimized"
 ui_print " "
-ui_print "--------------------------------------------------------------"
-ui_print "      • Performance Tuned"
-ui_print "      • Battery Optimized"
-ui_print "      • Smooth Experience"
-ui_print "      • Upstreamed & Stable"
-ui_print "--------------------------------------------------------------"
+ui_print "➤ Initializing Environment..."
+ui_print "➤ Patching Boot Image..."
+ui_print "➤ Applying Kernel Optimizations..."
+ui_print "➤ Finalizing Installation..."
+ui_print "➤ Installation Complete ✔"
 ui_print " "
-ui_print "          Thank you for choosing BunnyBladeX Kernel!"
-ui_print "=============================================================="
+ui_print "════════════════════════════════════════"
+ui_print " 🐰 Powered by Bunny Blade X Kernel"
+ui_print " ⚡ Enjoy a Stable & Smooth Experience!"
+ui_print "════════════════════════════════════════"
 ui_print " "
 
 # init.rc

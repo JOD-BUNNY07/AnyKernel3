@@ -23,7 +23,7 @@ device.name7=rmx2061
 device.name8=rmx2170
 
 # Supported Android versions
-supported.versions=12-16
+supported.versions=13-17
 supported.patchlevels=
 supported.vendorpatchlevels=
 '; } # end properties
